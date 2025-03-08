@@ -4,7 +4,7 @@ import './index.css'
 import '@ionic/react/css/core.css';
 import App from './App.jsx'
 // Importa Firebase desde archivo config
-import app from './firebase/firebase-config.js';
+// import {app, auth, analytics} from './firebase/firebase-config.js';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { setupIonicReact } from '@ionic/react';
+import AuthUI from './components/AuthUI.jsx';
 
 // funcion para disponibilizar componentes
 setupIonicReact();
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <>
+      <AuthUI />
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
