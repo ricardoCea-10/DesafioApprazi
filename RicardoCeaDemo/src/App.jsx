@@ -4,39 +4,35 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { setupIonicReact } from '@ionic/react';
 import AuthUI from './components/AuthUI.jsx';
-import Home from './components/Home.jsx';
+import Home from './components/FirestoreDatabase.jsx';
+import FirestoreDatabase from './components/FirestoreDatabase.jsx';
 
 // funcion para disponibilizar componentes
 setupIonicReact();
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  const around = 'around';
 
   return (
-    <>
-      <Home />
+    <div>
+      <FirestoreDatabase />
       <AuthUI />
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+
+      <div className={around}>
+        <div className={around}>
+          <h3>Todo App</h3>
+          <form>
+            <input type="text" placeholder="Add a new todo" />
+            <button type="submit">Add</button>
+          </form>
+        </div> 
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
+
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-    </>
+    </div>
   )
 }
 

@@ -11,7 +11,7 @@ console.log("Auth object:", auth);
 
   return (
     <div>
-      <h1>Hola mundo</h1>
+      <h1>Authorization component </h1>
     </div>
   )
 };
