@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { setupIonicReact } from '@ionic/react';
 import AuthUI from './components/AuthUI.jsx';
+import Home from './components/Home.jsx';
 
 // funcion para disponibilizar componentes
 setupIonicReact();
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <>
+      <Home />
       <AuthUI />
       <div>
         <a href="https://vite.dev" target="_blank">
